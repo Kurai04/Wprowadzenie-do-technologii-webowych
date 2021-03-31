@@ -1,0 +1,38 @@
+div{
+position: absolute;
+}
+#Toper{
+background-color: blue;
+height: 100px;
+width: 100%;
+top: 0;
+left: 0;
+}
+#Left_Column{
+background-color: chartreuse;
+width: 100px;
+top: 100px;
+bottom: 100px;
+left: 0;
+}
+#Main{
+background-color: blueviolet;
+top: 100px;
+left: 100px;
+right: 100px;
+bottom: 100px;
+}
+#Right_Column{
+background-color: darkorange;
+width: 100px;
+top: 100px;
+bottom: 100px;
+right: 0;
+}
+#Fotter{
+background-color: aquamarine;
+height: 100px;
+width: 100%;
+bottom: 0;
+left: 0;
+}
