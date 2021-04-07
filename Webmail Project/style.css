@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+#menu-panel{
+    background-color: lightseagreen;
+    padding: 10px;
+}
+#menu-panel div{
+    padding-right: 5px;
+}
+#menu{
+    display: flex;
+    justify-content: right;
+    width: 200px;
+}
+#messages-panel div{
+    border: solid 1px #888;
+    max-height: 100px;
+}
+#open-message{
+    margin-top: 20px;
+}
