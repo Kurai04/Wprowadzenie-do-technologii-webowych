@@ -98,7 +98,7 @@ pre {
 }
 /* Welcome */
 .welcome{
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Wobsite Project/Images/pc1.jpg");
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Website Project/Images/pc1.jpg");
   background-size: 100% auto;
   color: #fff;
   height: 100vh;
@@ -181,6 +181,7 @@ pre {
   display: flex;
   justify-content: start;
   align-items: center;
+  font-size: 30px;
 }
 .projectMessage p{
   font-size: 20px;
