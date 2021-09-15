@@ -80,10 +80,11 @@ pre {
 .navButtons{
   display: flex;
   grid-area: NavButtons;
-  justify-content: start;
+  justify-self: end;
   align-items: start;
   font-size: 200%;
   padding-top: 15%;
+  padding-right: 40px;
 }
 
 
@@ -98,18 +99,17 @@ pre {
 }
 /* Welcome */
 .welcome{
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Website Project/Images/pc1.jpg");
-  background-size: 100% auto;
-  color: #fff;
-  height: 100vh;
-}
-
-.welcomeMessage{
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Website Project/Images/pc1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vw;
 }
 .welcomeMessage h1{
-  font-size: 5vw;
+  font-size: 100px;
   color: var(--primary-color);
 }
 
@@ -183,9 +183,6 @@ pre {
   align-items: center;
   font-size: 30px;
 }
-.projectMessage p{
-  font-size: 20px;
-}
 .projectImage{
   width: 80%;
   justify-self: center;
@@ -196,6 +193,7 @@ pre {
 .footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--primary-color);
   background-color: #0F082E;
 }
@@ -210,4 +208,101 @@ pre {
 .footer ul li a{
   color: var(--primary-color);
   font-size: 30px;
+}
+/* Mobile Horizontal/Tablets */
+@media (max-width: 768px) {
+  .navButtons{
+    padding-right: 0px;
+    font-size: 150%;
+  }
+  .welcomeMessage h1{
+    font-size: 40px;
+  }
+  .mission{
+    margin: 20px;
+    display: grid;
+    grid-template: 10% auto/repeat(3, 1fr);
+    grid-template-areas: 
+  "missionText missionText missionText"
+  "mission1 mission2 mission3";
+    grid-gap: 10% 3%;
+  }
+  .team{
+    margin-top: 50px;
+  }
+  .teamMessage p{
+    font-size: 40px;
+  }
+  .project{
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+  .projectMessage{
+    font-size: 22px;
+  }
+  .footer div h1{
+    font-size: 20px;
+  }
+  .footer ul li a{
+    font-size: 20px;
+  }
+}
+
+/* Mobile Vertical */
+@media (max-width: 500px) {
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .navButtons{
+    padding-right: 0px;
+    font-size: 100%;
+  }
+  .mission{
+    display: grid;
+    grid-template: 5% repeat(3,30%)/1fr;
+    grid-gap: 5% 3%;
+    grid-template-areas: 
+  "missionText"
+  "mission1"
+  "mission2"
+  "mission3";
+  }
+
+  .welcomeMessage h1{
+    font-size: 25px;
+  }
+
+  .missionText{
+    padding: 0%;
+    margin: 0%;
+    height: 30px;
+  }
+  .team{
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+  .teamImage{
+    width: 100%;
+  }
+  .teamMessage{
+    display: flex;
+    justify-self: center;
+  }
+  .teamMessage p{
+    font-size: 30px;
+  }
+  .project{
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+  .projectMessage{
+    font-size: 20px;
+  }
+  .footer div h1{
+    font-size: 20px;
+  }
+  .footer ul li a{
+    font-size: 20px;
+  }
 }
