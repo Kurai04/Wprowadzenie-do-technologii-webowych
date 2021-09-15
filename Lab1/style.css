@@ -1,38 +1,40 @@
-div{
-position: absolute;
+#page {
+    margin: auto;
+    max-width: 1000px;
 }
-#Toper{
-background-color: blue;
-height: 100px;
-width: 100%;
-top: 0;
-left: 0;
+
+header {
+    width: 1000px;
+    height: 200px;
+    background-color: salmon;
+    font-size: 50px;
+    text-align: center;
 }
-#Left_Column{
-background-color: chartreuse;
-width: 100px;
-top: 100px;
-bottom: 100px;
-left: 0;
+
+.container {
+    display: flex;
+    width: 1000px;
 }
-#Main{
-background-color: blueviolet;
-top: 100px;
-left: 100px;
-right: 100px;
-bottom: 100px;
+
+.left {
+    height: 500px;
+    background-color: seagreen;
+    width: 200px;
 }
-#Right_Column{
-background-color: darkorange;
-width: 100px;
-top: 100px;
-bottom: 100px;
-right: 0;
+
+main {
+    width: 600px;
+    background-color: skyblue;
 }
-#Fotter{
-background-color: aquamarine;
-height: 100px;
-width: 100%;
-bottom: 0;
-left: 0;
+
+.right {
+    height: 500px;
+    background-color: royalblue;
+    width: 200px;
+}
+
+footer {
+    background-color: slategray;
+    width: 1000px;
+    height: 200px;
 }

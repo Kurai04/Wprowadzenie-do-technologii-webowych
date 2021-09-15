@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --default-color: #fff;
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --alpha: rgba(0,0,0,0.1);
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Nav */
+.nav {
+  background-color: #0F082E;
+  display: grid;
+  grid-template-rows: 40%;
+  grid-template-columns: 10% auto 20%;
+  grid-template-areas: 
+  "Logo Space NavButtons";
+}
+.logo{
+  padding: 0;
+  margin: 0;
+  grid-area: Logo;
+}
+.space{
+  grid-area: Space;
+}
+.navButtons{
+  display: flex;
+  grid-area: NavButtons;
+  justify-content: start;
+  align-items: start;
+  font-size: 200%;
+  padding-top: 15%;
+}
+
+
+.nav a {
+  color: var(--primary-color);
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.nav a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+}
+/* Welcome */
+.welcome{
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/Wobsite Project/Images/pc1.jpg");
+  background-size: 100% auto;
+  color: #fff;
+  height: 100vh;
+}
+
+.welcomeMessage{
+  display: flex;
+  justify-content: center;
+}
+.welcomeMessage h1{
+  font-size: 5vw;
+  color: var(--primary-color);
+}
+
+/* Mission */
+.mission{
+  margin: 20px;
+  display: grid;
+  grid-template: 30% auto/repeat(3, 1fr);
+  grid-template-areas: 
+  "missionText missionText missionText"
+  "mission1 mission2 mission3";
+  grid-gap: 10% 3%;
+}
+.mission div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mission div p{
+  grid-template: 1fr/1fr;
+  font-size: 20px;
+  padding: 5px;
+}
+.missionText{
+  grid-area: missionText;
+}
+.mission1{
+  grid-area: mission1;
+  background-color: var(--alpha);
+}
+.mission2{
+  grid-area: mission2;
+  background-color: var(--alpha);
+}
+.mission3{
+  grid-area: mission3;
+  background-color: var(--alpha);
+}
+
+/* Team */
+.team{
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 60vw 40vw;
+}
+.teamImage{
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+}
+.teamMessage{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.teamMessage p{
+  font-size: 50px;
+}
+
+/* Projects */
+.project{
+  display: grid;
+  margin-top: 0px;
+  padding: 0px;
+  grid-template-columns: 60vw 40vw;
+}
+.projectMessage{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.projectMessage p{
+  font-size: 20px;
+}
+.projectImage{
+  width: 80%;
+  justify-self: center;
+  align-items: center;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  background-color: #0F082E;
+}
+.footer ul {
+  display: flex;
+  margin: 0 10px;
+  color: var(--primary-color);
+}
+.footer ul li{
+  padding-left: 10px;
+}
+.footer ul li a{
+  color: var(--primary-color);
+  font-size: 30px;
+}
